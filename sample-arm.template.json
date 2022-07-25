@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    // hogefuga
+    "parameters": {
+        "stringParam": {
+            "type": "string",
+            "metadata": {
+                "description": "this is a string param"
+            }
+        },
+        "stringParamWithDefault": {
+            "type": "string",
+            "metadata": {
+                "description": "this is a string param with default value"
+            },
+            "defaultValue": "defaultVal"
+        },
+        "stringParamWithAllowed": {
+            "type": "string",
+            "metadata": {
+                "description": "this is a string param with allowed values"
+            },
+            "allowedValues": [ "val1", "val2" ]
+        },
+        "stringParamWithMinMax": {
+            "type": "string",
+            "metadata": {
+                "description": "this is a string param with Min/Max length"
+            },
+            "minLength": 2,
+            "maxLength": 10
+        },
+
+        "arrayParam": {
+            "type": "array",
+            "metadata": {
+                "description": "this is a array param"
+            }
+        },
+        "intParam": {
+            "type": "int",
+            "metadata": {
+                "description": "this is a int param"
+            }
+        },
+        "intParamWithAllowed": {
+            "type": "int",
+            "metadata": {
+                "description": "this is a int param"
+            },
+            "allowedValues": [ 10, 100, 1000 ]
+        },
+        "intParamWithMinMax": {
+            "type": "int",
+            "metadata": {
+                "description": "this is a int param with Min/Max value"
+            },
+            "minValue": 10,
+            "maxValue": 100
+        },
+
+        "boolParam": {
+            "type": "bool",
+            "metadata": {
+                "description": "this is a bool param"
+            }
+        },
+        "objectParam": {
+            "type": "object",
+            "metadata": {
+                "description": "this is a object param"
+            },
+            "defaultValue": { "hoge": "fuga" }
+        },
+        "secureStringParam": {
+            "type": "securestring",
+            "metadata": {
+                "description": "this is a secureString param"
+            }
+        },
+        "secureObjectParam": {
+            "type": "secureobject",
+            "metadata": {
+                "description": "this is a secureObject param"
+            }
+        }
+    },
+    "variables": {
+    },
+    "resources": [
+    ]
+}

@@ -1,0 +1,8 @@
+.venv
+__pycache__
+build
+dist
+azure_arm_nb_extensions.egg-info
+.ipynb_checkpoints
+*.ipynb
+*.parameters.json

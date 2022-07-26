@@ -6,3 +6,4 @@ azure_arm_nb_extensions.egg-info
 .ipynb_checkpoints
 *.ipynb
 *.parameters.json
+*.html

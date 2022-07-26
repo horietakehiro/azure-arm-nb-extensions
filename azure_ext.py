@@ -421,10 +421,8 @@ class AzureExtension(Magics):
         return views
 
     def create_freezed_html_path(self) -> str:
-        filepath = os.path.join(
-            HTML_BASE_DIR, hashlib.sha256(self.parameter_path.encode()).hexdigest() + ".html",
-        )
-        return filepath
+        basepath, _ = os.path.splitext(self.parameter_path)
+        return basepath + ".html"
 
 
     def _save_widget(self) -> widgets.Widget:
